@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+    <style>
+    button {
+        background-color: #C70039;
+    }
+    .Orange {
+        color:rgb(255, 184, 51);
+        font-style: italic;
+        font-family: fantasy;
+        font-feature-settings: "valt";
+    }
+    .Green { 
+        color:#93FF33;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+    .my-img {
+        width: 20%;
+        height: 50%;
+        background-image: url('./Pokoyo2.jpg');
+    }
+    </style>
+    <!--JavaScript-->
+    <script>
+        function onAleart(){
+            alert("Hello Orm.....!!");
+        }
+        function onAleartMyText (text) {
+            var mergeText = text + document.getElementById('iText').value;
+            alert(mergeText);
+        }
+    </script>
+</head>
+<body>
+    Hello Orm
+
+    <!-- Img Tag -->
+    <img src="./Pokoyo1.jpg"></img>
+    <br/>
+    <img class="my-img" src="./Pokoyo2.jpg">So Cute!!</img>
+
+    <br/>
+    <img style="width: 200px; height:100px;" src="./Pokoyo3.jpg"></img>
+
+
+
+    <h1 class="Orange"> How are you today?</h1>
+    <h1 class="Green">I'm fine.</h1>
+    <h2 style="color:blueviolet;">Nothing can bring me down.</h2>
+   <button onclick="onAleart()"><h1 style="color:aqua;">Really?</h1></button>
+   <button style="background-color:#AE33FF;"><h1>Nothing</h3></button>
+   <br>
+   <br>
+   <button style="background-color:rgba(199, 196, 0, 0.726);"><h1>:)Smily face</h1></button>
+
+   <hr/><br/>
+   <h1 class="Orange">Please enter name:</h1><input type="text" id="iText"></input>
+   <button onclick="onAleartMyText('Hello...')">OK</button>
+
+</body>
+</html>
